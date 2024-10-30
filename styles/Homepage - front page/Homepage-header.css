@@ -1,0 +1,101 @@
+.top-header-homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.4rem;
+}
+
+.top-header-logo-and-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-header-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 32rem;
+}
+
+.header-logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.header-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+@media (max-width: 1000px) {
+  .header-title {
+    display: none;
+  }
+}
+@media (max-width: 854px) {
+  .header-logo {
+    display: none;
+  }
+}
+
+.header-buttons {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  height: 3rem;
+  width: 7.8rem;
+  border-radius: 15px;
+  border: solid white;
+  cursor: pointer;
+  box-shadow: -5px 5px 8px #4d4d4d;
+}
+
+.placeholder-button-header {
+  margin: 0rem 1rem 0rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0px 80px;
+  color: white;
+  background-color: transparent;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+}
+
+.placeholder-button-header:hover {
+  color: black;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  transition: background-color 0.4s;
+}
+
+.placeholder-button-header:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.blog-button-header:hover,
+.about-button-header:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: rgb(14, 14, 14);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  transition: background-color 0.4s;
+}
+
+.blog-button-header:active,
+.about-button-header:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.line-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+}

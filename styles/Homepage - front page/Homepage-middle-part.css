@@ -1,0 +1,183 @@
+.middle-part-container {
+  /*if I use the short form for writing margin, it somehow overwrites other parts of css. It doesn't make sense but it does that*/
+  margin-top: 8rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.outter-container-middle-part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.general-styling {
+  color: rgb(197, 211, 249);
+  font-family: "Alfa Slab One", serif;
+  font-size: 5.2rem;
+  margin: 0 0 0 0;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.Majora-font-styling {
+  font-style: italic;
+  font-weight: 900;
+  color: rgb(152, 168, 212);
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000,
+    4px 4px 0 #000;
+}
+
+.text-description-right-bottom {
+  width: 47%;
+  font-size: 1.7rem;
+  white-space: initial;
+}
+
+.Welcome-video-row,
+.User-video-row,
+.Majora-here-video-row,
+.description-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.description-row {
+  align-items: start;
+}
+
+.image-form {
+  width: 100%;
+  height: 6rem;
+  border-radius: 55px;
+  margin: 0 0 0 2rem;
+}
+
+.backround-image-default-settings {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.one-backround-image-editing {
+  background-image: url(../../assets/Images/Homepage-front-page/water-rainy-shine.jpg);
+  background-position: 0 72%;
+}
+
+.second-backround-image-editing {
+  background-image: url(../../assets/Images/Homepage-front-page/city-hall.jpg);
+  background-position: 0 45%;
+}
+
+.third-backround-image-editing {
+  background-image: url(../../assets/Images/Homepage-front-page/flower-sunset.jpg);
+  background-position: 0 35%;
+}
+
+.fourth-backround-image-editing {
+  background-image: url(../../assets/Images/Homepage-front-page/winter-road-snowy.jpg);
+  background-position: 0 80%;
+}
+
+.outter-container-down-part {
+  margin: 20vw 0 0 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.top-bottom-collumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-right-box,
+.top-left-box,
+.bottom-left-box {
+  border-radius: 36px;
+}
+
+.top-left-box,
+.bottom-left-box {
+  margin: 0 3vw 3.5vw 0;
+  height: 18vw;
+}
+
+.top-left-box {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Zentriert den Text horizontal */
+  align-items: center; /* Zentriert den Text vertikal */
+  flex-direction: column;
+}
+
+.top-left-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/Images/Homepage-front-page/clock-on-bench.jpg);
+  filter: brightness(44%);
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 20%, 0;
+  overflow: hidden;
+}
+
+.black-transparent-box-top-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 58%;
+  width: 92%;
+  border-radius: 30px;
+  margin: 0 0 6vw 0;
+}
+
+.year-in-percentage-text {
+  z-index: 1;
+  color: rgb(122, 172, 231);
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Alfa Slab One", system-ui;
+}
+
+.of-the-year-has-passed-text {
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  font-family: "Alfa Slab One", system-ui;
+  font-size: 1.5rem;
+}
+
+.dynamic-date-year-text {
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  font-family: "Alfa Slab One", system-ui;
+  font-size: 1.5rem;
+
+}
+
+.bottom-left-box {
+  background-image: url(../../assets/Images/Homepage-front-page/city-hall.jpg);
+  background-size: 150%;
+  background-position: 55% 0;
+  filter: brightness(44%);
+
+}
+.middle-right-box {
+  flex: 1.8;
+  height: 39.5vw;
+  margin: 0 0 0 3vw;
+  background-image: url("../../assets/Images/Homepage-front-page/dominator-psycho-pass.jpg");
+  background-position: 30% 0;
+  filter: brightness(20%);
+}
