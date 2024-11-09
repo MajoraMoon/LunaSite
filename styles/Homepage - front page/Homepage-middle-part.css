@@ -5,7 +5,7 @@
   margin-left: 3rem;
 }
 
-.outter-container-middle-part {
+.outer-container-middle-part {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -55,39 +55,39 @@
   margin: 0 0 0 2rem;
 }
 
-.backround-image-default-settings {
+.background-image-default-settings {
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.one-backround-image-editing {
+.one-background-image-editing {
   background-image: url(../../assets/Images/Homepage-front-page/water-rainy-shine.jpg);
   background-position: 0 72%;
 }
 
-.second-backround-image-editing {
+.second-background-image-editing {
   background-image: url(../../assets/Images/Homepage-front-page/city-hall.jpg);
   background-position: 0 45%;
 }
 
-.third-backround-image-editing {
+.third-background-image-editing {
   background-image: url(../../assets/Images/Homepage-front-page/flower-sunset.jpg);
   background-position: 0 35%;
 }
 
-.fourth-backround-image-editing {
+.fourth-background-image-editing {
   background-image: url(../../assets/Images/Homepage-front-page/winter-road-snowy.jpg);
   background-position: 0 80%;
 }
 
-.outter-container-down-part {
+.outer-container-down-part {
   margin: 20vw 0 0 0;
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-.top-bottom-collumn {
+.top-bottom-column {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -134,11 +134,11 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   height: 58%;
   width: 92%;
   border-radius: 30px;
-  margin: 0 0 6vw 0;
+  margin: 0 0 1vw 0;
 }
 
 .year-in-percentage-text {
