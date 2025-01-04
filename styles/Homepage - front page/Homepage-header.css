@@ -13,7 +13,7 @@
 .top-header-buttons-container {
   display: flex;
   justify-content: space-between;
-  width: 32rem;
+  width: 35rem;
 }
 
 .header-logo {
@@ -24,9 +24,15 @@
 
 .header-title {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 700;
   opacity: 0.8;
+}
+
+@media (max-width: 854px) {
+  .header-logo {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -34,11 +40,7 @@
     display: none;
   }
 }
-@media (max-width: 854px) {
-  .header-logo {
-    display: none;
-  }
-}
+
 
 .header-buttons {
   font-family: "Roboto", sans-serif;
