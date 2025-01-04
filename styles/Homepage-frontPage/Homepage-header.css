@@ -1,0 +1,110 @@
+header {
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(14, 14, 14);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.7);
+}
+
+
+.top-header-homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.4rem;
+}
+
+.top-header-logo-and-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-header-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.header-logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1vw;
+  font-weight: bold;
+}
+
+.header-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7vw;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+@media (max-width: 854px) {
+  .header-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-title {
+    display: none;
+  }
+}
+
+
+.header-buttons {
+  margin-right: 30px;
+  margin-top: 0.5vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  width: 6.4rem;
+  border-radius: 15px;
+  border: solid white;
+  cursor: pointer;
+  box-shadow: -5px 5px 8px #4d4d4d;
+}
+
+.placeholder-button-header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 80px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.placeholder-button-header:hover {
+  color: black;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  transition: background-color 0.4s;
+}
+
+.placeholder-button-header:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.blog-button-header:hover,
+.about-button-header:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: rgb(14, 14, 14);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  transition: background-color 0.4s;
+}
+
+.blog-button-header:active,
+.about-button-header:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+

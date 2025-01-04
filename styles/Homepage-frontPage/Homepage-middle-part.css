@@ -1,0 +1,325 @@
+.middle-part-container {
+    /*if I use the short form for writing margin, it somehow overwrites other parts of css. It doesn't make sense but it does that*/
+    margin-top: 15vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.outer-container-top-part {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.outer-container-middle-part {
+    margin: 20vw 0 0 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.outer-container-bottom-part {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.general-styling {
+    color: rgb(197, 211, 249);
+    font-family: "Alfa Slab One", serif;
+    font-size: 5.2vw;
+    margin: 0 0 0 0;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.Majora-font-styling {
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(152, 168, 212);
+    text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000,
+    4px 4px 0 #000;
+}
+
+.text-description-right-bottom {
+    height: auto;
+    width: 47%;
+    font-size: 1.7vw;
+    white-space: initial;
+}
+
+.Welcome-video-row,
+.User-video-row,
+.Majora-here-video-row,
+.description-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.description-row {
+    align-items: start;
+}
+
+.image-form {
+    width: 100%;
+    height: 6vw;
+    border-radius: 55px;
+    margin: 0 0 0 2rem;
+}
+
+.background-image-default-settings {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.one-background-image-editing {
+    background-image: url(../../assets/Images/Homepage-front-page/water-rainy-shine.jpg);
+    background-position: 0 72%;
+}
+
+.second-background-image-editing {
+    background-image: url(../../assets/Images/Homepage-front-page/city-hall.jpg);
+    background-position: 0 45%;
+}
+
+.third-background-image-editing {
+    background-image: url(../../assets/Images/Homepage-front-page/flower-sunset.jpg);
+    background-position: 0 35%;
+}
+
+.fourth-background-image-editing {
+    background-image: url(../../assets/Images/Homepage-front-page/winter-road-snowy.jpg);
+    background-position: 0 80%;
+}
+
+
+.top-bottom-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-right-box,
+.top-left-box,
+.bottom-left-box {
+    border-radius: 36px;
+}
+
+.top-left-box,
+.bottom-left-box {
+    margin: 0 3vw 3.5vw 0;
+    height: 18vw;
+}
+
+.top-left-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-left-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/Images/Homepage-front-page/clock-on-bench.jpg);
+    filter: brightness(44%);
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: 60%, 0;
+    overflow: hidden;
+}
+
+.black-transparent-box-top-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 58%;
+    width: 92%;
+    border-radius: 30px;
+    margin: 3vw 0 1vw 0;
+}
+
+.year-in-percentage-text {
+    z-index: 1;
+    color: rgb(122, 172, 231);
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: "Alfa Slab One", system-ui;
+}
+
+.of-the-year-has-passed-text {
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    font-family: "Alfa Slab One", system-ui;
+    font-size: 1.5vw;
+}
+
+.dynamic-date-year-text {
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    font-family: "Alfa Slab One", system-ui;
+    font-size: 1.5vw;
+    margin-bottom: 3rem;
+
+}
+
+.bottom-left-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.bottom-left-box::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/Images/Homepage-front-page/city-hall.jpg);
+    filter: brightness(44%);
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: 55% 0;
+    overflow: hidden;
+
+}
+
+
+.middle-right-box {
+    flex: 1.8;
+    height: 39.5vw;
+    margin: 0 0 0 3vw;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.middle-right-box::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/Images/Homepage-front-page/dominator-psycho-pass.jpg");
+    filter: brightness(20%);
+    background-position: 40% 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 140%;
+}
+
+
+.article-preview-boxes-background {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    height: 60vh;
+    background-color: rgb(21, 21, 21);
+    margin-top: 20vh;
+    padding: 0 9rem;
+    margin-left: -8vw;
+    margin-right: -7vw;
+}
+
+
+.article-preview-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    width: 20vw;
+    height: 27vw;
+    border-radius: 20px;
+    border: rgb(0, 0, 0, 0.6) solid 8px;
+}
+
+.article-preview-box-left{
+
+}
+
+.article-preview-box-image {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 46%;
+    background-color: rgb(24, 12, 59);
+    border-radius: 20px;
+    border: rgb(0, 0, 0, 0.4) solid 3px;
+    margin-top: 1vw;
+
+}
+
+.article-preview-box-image::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+}
+
+.article-preview-box-image-left::before {
+    background-image: url("../../assets/Images/Homepage-front-page/broken-glass-sunlight.jpg");
+    background-position: 0 25%;
+    background-size: 170%;
+}
+
+.article-preview-box-image-middle::before {
+
+    background-image: url("../../assets/Images/Homepage-front-page/snowy-village.jpg");
+    background-position: 50% 50%;
+    background-size: 120%;
+}
+
+.article-preview-box-image-right::before {
+    background-image: url("../../assets/Images/Homepage-front-page/village-asian.jpg");
+    background-position: 50% 50%;
+    background-size: 120%;
+}
+
+.article-preview-box-text-content {
+    width: 90%;
+    height: auto;
+    flex: 1;
+    margin-bottom: 1vw;
+
+}
+
+.article-preview-meta-data-text, .article-preview-description-text{
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-family: "Alfa Slab One", system-ui;
+    color: rgb(193, 203, 231, 0.8);
+    font-size: 1vw;
+}
+
+.article-preview-title-text{
+
+    font: bold 1.4vw "Alfa Slab One", system-ui;
+}
