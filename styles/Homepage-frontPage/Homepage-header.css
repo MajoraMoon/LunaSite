@@ -16,6 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 0.4rem;
+  height: 100%;
 }
 
 .top-header-logo-and-title {
@@ -25,17 +26,21 @@ header {
 
 .top-header-buttons-container {
   display: flex;
-  justify-content: space-between;
-  width: 30rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 .header-logo {
+  margin-left: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 1.1vw;
   font-weight: bold;
 }
 
 .header-title {
+  margin-left: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 0.7vw;
   font-weight: 700;
@@ -56,8 +61,7 @@ header {
 
 
 .header-buttons {
-  margin-right: 30px;
-  margin-top: 0.5vw;
+  margin: 0.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 1.2rem;
@@ -68,6 +72,14 @@ header {
   cursor: pointer;
   box-shadow: -5px 5px 8px #4d4d4d;
 }
+
+@media (max-width: 600px) {
+  .header-buttons {
+    width: 5.5rem;
+    font-size: 1rem;
+  }
+}
+
 
 .placeholder-button-header {
   display: inline-flex;
