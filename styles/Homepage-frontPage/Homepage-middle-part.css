@@ -237,10 +237,8 @@
     flex: 1;
     height: 60vh;
     background-color: rgb(21, 21, 21);
-    margin-top: 20vh;
     padding: 0 9rem;
-    margin-left: -8vw;
-    margin-right: -7vw;
+    margin: 20vh -5vw 50vh -8vw;
 }
 
 
