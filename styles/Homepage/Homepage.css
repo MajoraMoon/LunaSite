@@ -78,22 +78,22 @@
 }
 
 .one-background-image-editing {
-    background-image: url(../../assets/Images/Homepage-front-page/water-rainy-shine.jpg);
+    background-image: url("../../assets/Images/water-rainy-shine.jpg");
     background-position: 0 72%;
 }
 
 .second-background-image-editing {
-    background-image: url(../../assets/Images/Homepage-front-page/city-hall.jpg);
+    background-image: url("../../assets/Images/city-hall.jpg");
     background-position: 0 45%;
 }
 
 .third-background-image-editing {
-    background-image: url(../../assets/Images/Homepage-front-page/flower-sunset.jpg);
+    background-image: url("../../assets/Images/flower-sunset.jpg");
     background-position: 0 35%;
 }
 
 .fourth-background-image-editing {
-    background-image: url(../../assets/Images/Homepage-front-page/winter-road-snowy.jpg);
+    background-image: url("../../assets/Images/winter-road-snowy.jpg");
     background-position: 0 80%;
 }
 
@@ -130,7 +130,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/Images/Homepage-front-page/clock-on-bench.jpg);
+    background-image: url("../../assets/Images/clock-on-bench.jpg");
     filter: brightness(44%);
     z-index: 0;
     background-repeat: no-repeat;
@@ -193,7 +193,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/Images/Homepage-front-page/city-hall.jpg);
+    background-image: url("../../assets/Images/city-hall.jpg");
     filter: brightness(44%);
     z-index: 0;
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../../assets/Images/Homepage-front-page/dominator-psycho-pass.jpg");
+    background-image: url("../../assets/Images/dominator-psycho-pass.jpg");
     filter: brightness(20%);
     background-position: 40% 0;
     background-repeat: no-repeat;
@@ -270,6 +270,7 @@
     width: 100%;
     max-width: 16vw;
     height: 23.5vw;
+    border-radius: 17px;
     transition: all .2s;
 }
 
@@ -305,26 +306,26 @@
 }
 
 .article-preview-box-image-left::before {
-    background-image: url("../../assets/Images/Homepage-front-page/broken-glass-sunlight.jpg");
+    background-image: url("../../assets/Images/broken-glass-sunlight.jpg");
     background-position: 0 25%;
     background-size: 170%;
 }
 
 .article-preview-box-image-middle-left::before {
-    background-image: url("../../assets/Images/Homepage-front-page/broken-glass-sunlight.jpg");
+    background-image: url("../../assets/Images/broken-glass-sunlight.jpg");
     background-position: 0 25%;
     background-size: 170%;
 }
 
 .article-preview-box-image-middle-right::before {
 
-    background-image: url("../../assets/Images/Homepage-front-page/snowy-village.jpg");
+    background-image: url("../../assets/Images/snowy-village.jpg");
     background-position: 50% 50%;
     background-size: 120%;
 }
 
 .article-preview-box-image-right::before {
-    background-image: url("../../assets/Images/Homepage-front-page/village-asian.jpg");
+    background-image: url("../../assets/Images/village-asian.jpg");
     background-position: 50% 50%;
     background-size: 120%;
 }
