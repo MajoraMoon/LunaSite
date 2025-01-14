@@ -1,6 +1,6 @@
 .middle-part-container {
   /*if I use the short form for writing margin, it somehow overwrites other parts of css. It doesn't make sense but it does that*/
-  margin-top: 20vh;
+  margin-top: 13vh;
   margin-right: 3vw;
   margin-left: 3vw;
 }

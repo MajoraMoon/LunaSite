@@ -1,17 +1,17 @@
 function loadHeaderFooter(selector, filePath, callback) {
-    fetch(filePath)
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector(selector).innerHTML = data;
-            if (callback) callback();
-        })
-        .catch(error => {
-            console.error('Error loading component: ', error);
-        });
+  fetch(filePath)
+    .then((response) => response.text())
+    .then((data) => {
+      document.querySelector(selector).innerHTML = data;
+      if (callback) callback();
+    })
+    .catch((error) => {
+      console.error("Error loading component: ", error);
+    });
 }
 
-loadHeaderFooter('header', '../html/general/header.html', () => {
-    initializeHeaderLogic();
+loadHeaderFooter("header", "../html/header.html", () => {
+  initializeHeaderLogic();
 });
 
-loadHeaderFooter('footer', '../html/general/footer.html');
+loadHeaderFooter("footer", "../html/footer.html");
