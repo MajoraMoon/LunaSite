@@ -1,122 +1,176 @@
 header {
   height: 75px;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 1000;
-  background-color: rgb(14, 14, 14);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgb(255, 255, 255, 0.7);
 }
-
 
 .top-header-homepage {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.4rem;
   height: 100%;
 }
 
-.top-header-logo-and-title {
+.top-header-logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.top-header-buttons-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 0 1rem;
-}
-
-.header-logo {
-  margin-left: 30px;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1vw;
-  font-weight: bold;
-}
-
-.header-title {
-  margin-left: 30px;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.7vw;
-  font-weight: 700;
-  opacity: 0.8;
+.top-header-logo-text {
+  margin-right: 15px;
+  font-family: "Alfa Slab One", system-ui;
+  font-style: italic;
+  font-weight: bolder;
 }
 
 @media (max-width: 854px) {
-  .header-logo {
+  .top-header-logo {
     display: none;
   }
 }
 
 @media (max-width: 1000px) {
-  .header-title {
+  .top-header-logo {
     display: none;
   }
 }
 
-
-.header-buttons {
-  margin: 0.5rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-  font-size: 1.2rem;
-  height: 2.5rem;
-  width: 6.4rem;
-  border-radius: 15px;
-  border: solid white;
-  cursor: pointer;
-  box-shadow: -5px 5px 8px #4d4d4d;
-}
-
-@media (max-width: 600px) {
-  .header-buttons {
-    width: 5.5rem;
-    font-size: 1rem;
-  }
-}
-
-
-.placeholder-button-header {
-  display: inline-flex;
+.test {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  padding: 0 80px;
-  color: white;
-  background-color: transparent;
-  border: 2px solid white;
 }
 
-.placeholder-button-header:hover {
-  color: black;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
-  transition: background-color 0.4s;
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.placeholder-button-header:active {
-  box-shadow: none;
-  transform: translateY(0);
+nav li {
+  margin-right: 50px;
 }
 
-.blog-button-header:hover,
-.about-button-header:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: rgb(14, 14, 14);
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
-  transition: background-color 0.4s;
+nav .nav-link {
+  color: rgb(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
 
-.blog-button-header:active,
-.about-button-header:active {
-  box-shadow: none;
-  transform: translateY(0);
+nav .nav-link.active {
+  color: rgb(255, 255, 255, 1);
 }
 
+/* From Uiverse.io by Valeron-T */
+.card {
+  display: flex;
+  height: 50px;
+  width: 140px;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4,
+.card .social-link5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background-color: #242c34;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background-color: #5865f2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link5:hover {
+  background-color: #ff8000;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
