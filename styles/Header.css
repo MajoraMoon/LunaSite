@@ -20,6 +20,7 @@ header {
   font-family: "Alfa Slab One", system-ui;
   font-style: italic;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 @media (max-width: 854px) {
@@ -195,4 +196,9 @@ nav .nav-link.active::after {
   100% {
     transform: scale(1);
   }
+}
+
+
+.Majora-logo-text-fix{
+  text-decoration: none;
 }
