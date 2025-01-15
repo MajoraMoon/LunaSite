@@ -58,11 +58,33 @@ nav .nav-link {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 1.5rem;
+  position: relative;
   transition: all 0.3s ease;
+}
+
+nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+nav .nav-link:hover::after {
+  width: 100%;
 }
 
 nav .nav-link.active {
   color: rgb(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+nav .nav-link.active::after {
+  width: 100%;
 }
 
 /* From Uiverse.io by Valeron-T */

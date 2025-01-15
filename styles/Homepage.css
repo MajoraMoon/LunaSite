@@ -47,7 +47,8 @@
   height: auto;
   width: 47%;
   font-size: 1.7vw;
-  white-space: initial;
+  white-space: inherit;
+  margin-left: 2rem;
 }
 
 .Welcome-video-row,
