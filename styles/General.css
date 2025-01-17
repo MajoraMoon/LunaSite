@@ -1,7 +1,25 @@
+html {
+
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 2vw;
   background-color: rgb(14, 14, 14);
 }
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 p,
 h1,

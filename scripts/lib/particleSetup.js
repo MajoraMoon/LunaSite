@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "../scripts/lib/particles-config.json",
     })
     .then((container) => {
-      console.log("✅ tsParticles (JSON-Config) erfolgreich geladen!");
+      console.log("Loaded tsParticles (JSON-Config) successfully!");
     })
     .catch((error) => {
-      console.error("❌ Fehler beim Laden der tsParticles-Config:", error);
+      console.error("Could not load tsParticles-Config:", error);
     });
 });
