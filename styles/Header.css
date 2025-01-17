@@ -35,7 +35,7 @@ header {
   }
 }
 
-.test {
+.header-navigaton-section {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -198,7 +198,6 @@ nav .nav-link.active::after {
   }
 }
 
-
-.Majora-logo-text-fix{
+.Majora-logo-text-fix {
   text-decoration: none;
 }
