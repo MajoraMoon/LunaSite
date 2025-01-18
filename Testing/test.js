@@ -1,21 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const particleId = "tsparticles";
+        function getYearProgress() {
+            const now = new Date();
+            const start = new Date(now.getFullYear(), 0, 1); // 1. Januar
+            const end = new Date(now.getFullYear() + 1, 0, 1); // 1. Januar nächstes Jahr
+            const progress = ((now - start) / (end - start)) * 100;
+            return progress.toFixed(3); // 2 Nachkommastellen
+        }
 
-  if (!document.getElementById(particleId)) {
-    console.warn(`No <div id='${particleId}'> found. Check your html.`);
-    return;
-  }
+                function updateYearProgress() {
+            document.getElementById("year-progress").innerText = `Das Jahr ist zu ${getYearProgress()}% vorbei.`;
+        }
 
-  // tsParticles mit externer JSON-Config laden
-  tsParticles
-    .load({
-      id: particleId,
-      url: "Particles-conf.json",
-    })
-    .then((container) => {
-      console.log("✅ tsParticles (JSON-Config) erfolgreich geladen!");
-    })
-    .catch((error) => {
-      console.error("❌ Fehler beim Laden der tsParticles-Config:", error);
-    });
-});
+        updateYearProgress(); // Direkt beim Laden ausführen
+        setInterval(updateYearProgress, 6 * 60 * 60 * 1000); // Alle 6 Stunden (21600000 ms) aktualisieren

@@ -2,5 +2,17 @@ body {
   background-color: rgb(24, 24, 24);
 }
 
-#tsparticles {
+p{
+  color: white;
+  font-size: 2rem;
+}
+
+
+.layout-position{
+  width: 99vw;
+  height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
