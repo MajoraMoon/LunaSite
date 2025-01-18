@@ -1,19 +1,28 @@
 const quotes = [
-    { text: "Beauty has a lot of colors.", class: "quoteOneStyling" },
-    { text: "Simplicity is the ultimate sophistication.", class: "quoteTwoStyling" },
-    { text: "Creativity takes courage.", class: "quoteThreeStyling" },
-    { text: "Art is the journey of a free soul.", class: "quoteFourStyling" }
-  ];
+  { text: "Beauty has a lot of colors.", class: "quoteOneStyling" },
+  { text: "We don't win in the end.", class: "quoteTwoStyling" },
+  {
+    text: "Beauty fades.<br />That's why it is beautiful.",
+    class: "quoteThreeStyling",
+  },
+  {
+    text: "Angel playing disgusted<br />with devil's faces.",
+    class: "quoteFourStyling",
+  },
+];
 
+function changeText() {
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const selectedText = quotes[randomIndex];
 
-  function changeText(){
+  const textElement = document.getElementById("dynamicQuotes");
 
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const selectedText = quotes[randomIndex];
+  textElement.className = "general-styling";
+  textElement.classList.add(selectedText.class);
 
-    const textElement = document.getElementById("dynamicQuotes");
+  textElement.innerHTML = selectedText.text;
+}
 
-    textElement.classList.remove(...textElement.classList);
+setInterval(changeText, 300000);
 
-    textElement.textContent = selectedText.text;
-  }
+changeText();
