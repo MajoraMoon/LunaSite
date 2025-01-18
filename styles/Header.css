@@ -33,6 +33,10 @@ header {
   .top-header-logo {
     display: none;
   }
+
+  .top-header-homepage{
+    justify-content: center;
+  }
 }
 
 .header-navigaton-section {

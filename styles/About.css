@@ -55,3 +55,27 @@
 .marked-text-description {
   color: rgb(197, 211, 249);
 }
+
+
+@media (max-height: 799px) {
+.description-text-about-me {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.Hey-im-majora-text {
+  font-size: 3rem;
+}
+
+.profile-picture-mask{
+    width: 30vw;
+  height: 69vh;
+}
+}
+
+@media (max-width: 910px) {
+
+.profile-picture-mask{
+  display: none;
+}
+}
