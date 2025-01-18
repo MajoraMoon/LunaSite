@@ -23,8 +23,28 @@ function updateCurrentDate() {
   document.querySelector(".dynamic-date-year-text").innerText = formattedDate;
 }
 
+function scheduleMidnightUpdate() {
+  const now = new Date();
+  const nextMidnight = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() + 1, // next day
+    0,
+    0,
+    0 // midnight
+  );
+
+  const timeUntilMidnight = nextMidnight - now;
+
+  setTimeout(() => {
+    updateCurrentDate();
+    setInterval(updateCurrentDate, 86400000);
+  }, timeUntilMidnight);
+}
+
 updateYearProgress();
 updateCurrentDate();
 
 setInterval(updateYearProgress, 300000);
-setInterval(updateCurrentDate, 86400000);
+
+scheduleMidnightUpdate();
