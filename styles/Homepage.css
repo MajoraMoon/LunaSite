@@ -168,7 +168,7 @@
 
 .of-the-year-has-passed-text {
   z-index: 1;
-  color: white;
+  color: rgb(197, 211, 249);
   font-weight: bold;
   font-family: "Alfa Slab One", system-ui;
   font-size: 1.5vw;
@@ -176,7 +176,7 @@
 
 .dynamic-date-year-text {
   z-index: 1;
-  color: white;
+  color: rgb(197, 211, 249);
   font-weight: bold;
   font-family: "Alfa Slab One", system-ui;
   font-size: 1.5vw;
@@ -188,7 +188,6 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -204,6 +203,14 @@
   background-size: 150%;
   background-position: 55% 0;
   overflow: hidden;
+}
+
+.bottom-left-box-text {
+  font-family: "Alfa Slab One", system-ui;
+  font-size: 1.3rem;
+  position: relative;
+  align-items: start;
+  color: rgb(197, 211, 249);
 }
 
 .middle-right-box {
@@ -271,6 +278,7 @@
   font-weight: bold;
   margin-bottom: 5vh;
   font-family: "Alfa Slab One", system-ui;
+  color: rgb(197, 211, 249);
 }
 
 .rock-paper-scissors-icon {
@@ -280,11 +288,12 @@
 .button-icon-css {
   background-color: transparent;
   border-radius: 100px;
-  border-color: white;
+  color: rgb(197, 211, 249);
   border-style: solid;
   padding: 40px;
   margin-right: 40px;
   cursor: pointer;
+  border-color: rgb(197, 211, 249);
 }
 
 .button-icon-css:hover {
@@ -296,12 +305,14 @@
 }
 
 .rock-paper-scissors-result {
+  color: rgb(197, 211, 249);
   font-size: 2.2rem;
   font-weight: bold;
   font-family: "Alfa Slab One", system-ui;
 }
 
 .score {
+  color: rgb(197, 211, 249);
   margin-top: 2vh;
   font-size: 1.5rem;
   font-weight: bold;
@@ -309,6 +320,7 @@
 }
 
 .you-and-computer {
+  color: rgb(197, 211, 249);
   font-size: 2rem;
   font-weight: bold;
   font-family: "Alfa Slab One", system-ui;
@@ -319,10 +331,10 @@
   width: 313px;
   border-radius: 50px;
   border-style: solid;
-  border-color: white;
+  color: rgb(197, 211, 249);
   font-size: 25px;
   font-weight: bold;
-  color: white;
+  color: rgb(197, 211, 249);
   background-color: rgb(30, 30, 30);
   cursor: pointer;
   margin-top: 25px;

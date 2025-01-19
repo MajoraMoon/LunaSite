@@ -1,0 +1,25 @@
+.coding-layout-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  margin-top: 18vh;
+}
+
+.information-background-form {
+  background-color: rgb(41, 41, 41);
+  width: 90vw;
+  height: 10vh;
+  border: solid transparent;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-information {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
