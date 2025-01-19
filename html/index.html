@@ -85,8 +85,8 @@
                 class="year-in-percentage-text"
               ></p>
               <p class="of-the-year-has-passed-text">of the year has passed</p>
+              <p class="dynamic-date-year-text"></p>
             </div>
-            <p class="dynamic-date-year-text">14.09.2025</p>
           </div>
           <div
             class="bottom-left-box background-image-default-settings"
@@ -95,8 +95,82 @@
         </div>
         <div
           class="middle-right-box background-image-default-settings"
-          data-information="dominator-psycho-pass.jpg"
-        ></div>
+          data-information="snowy-house.jpg"
+        >
+          <div class="black-transparent-box-middle-right">
+            <div class="rock-paper-scissors-middle-right-box">
+              <div class="rock-paper-scissors-alignment">
+                <p class="rock-paper-scissors-title">Rock Paper Scissors</p>
+
+                <div>
+                  <button
+                    class="button-icon-css"
+                    onclick="
+    
+      playGame(`Rock`)
+    "
+                  >
+                    <img
+                      class="rock-paper-scissors-icon"
+                      src="../assets/Images/minigame-images/Rock-emoji.png"
+                      alt="Rock"
+                    />
+                  </button>
+                  <button
+                    class="button-icon-css"
+                    onclick="
+      playGame(`Paper`)
+    "
+                  >
+                    <img
+                      class="rock-paper-scissors-icon"
+                      src="../assets/Images/minigame-images/Paper-emoji.png"
+                      alt="Paper"
+                    />
+                  </button>
+                  <button
+                    class="button-icon-css"
+                    onclick="
+    
+      playGame(`Scissors`)
+    
+    "
+                  >
+                    <img
+                      class="rock-paper-scissors-icon"
+                      src="../assets/Images/minigame-images/Scissors-emoji.png"
+                      alt="Scissors"
+                    />
+                  </button>
+                </div>
+
+                <div class="win-lose-ties-text">
+                  <p class="js-result rock-paper-scissors-result"></p>
+
+                  <p class="js-moves you-and-computer"></p>
+
+                  <p class="js-score score"></p>
+                </div>
+
+                <div class="reset-button-score">
+                  <button
+                    class="reset-score"
+                    onclick="
+          
+          score.wins = 0;
+          score.loses = 0;
+          score.ties = 0;
+          localStorage.removeItem(`score`)
+          updateScoreElement();
+          "
+                  >
+                    Reset Score
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -109,5 +183,6 @@
     <script src="../scripts/scrollingAnimation.js"></script>
     <script src="../scripts/updateYearPercentage.js"></script>
     <script src="../scripts/changeQuotes.js"></script>
+    <script src="../scripts/rock-paper-scissors.js"></script>
   </body>
 </html>

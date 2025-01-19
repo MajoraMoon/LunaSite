@@ -51,6 +51,6 @@ function changeText() {
   }, 600);
 }
 
-setInterval(changeText, 300000);
+setInterval(changeText, 120000);
 
 changeText();

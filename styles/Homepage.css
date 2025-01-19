@@ -156,7 +156,6 @@
   height: 58%;
   width: 92%;
   border-radius: 30px;
-  margin: 3vw 0 1vw 0;
 }
 
 .year-in-percentage-text {
@@ -181,7 +180,7 @@
   font-weight: bold;
   font-family: "Alfa Slab One", system-ui;
   font-size: 1.5vw;
-  margin-bottom: 3rem;
+  margin-top: 2vh;
 }
 
 .bottom-left-box {
@@ -211,6 +210,7 @@
   flex: 1.8;
   height: 39.5vw;
   margin: 0 0 0 3vw;
+  display: flex;
   position: relative;
   overflow: hidden;
   justify-content: center;
@@ -222,12 +222,118 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/Images/dominator-psycho-pass.jpg");
-  filter: brightness(20%);
-  background-position: 40% 0;
+  background-image: url("../../assets/Images/snowy-house.jpg");
+  filter: brightness(25%);
+  background-position: 40% 45%;
   background-repeat: no-repeat;
   overflow: hidden;
   background-size: 140%;
+  z-index: 0;
+}
+
+.black-transparent-box-middle-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 90%;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.rock-paper-scissors-middle-right-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.rock-paper-scissors-alignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.win-lose-ties-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Alfa Slab One", system-ui;
+}
+
+.rock-paper-scissors-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  font-family: "Alfa Slab One", system-ui;
+}
+
+.rock-paper-scissors-icon {
+  height: 10vh;
+}
+
+.button-icon-css {
+  background-color: transparent;
+  border-radius: 100px;
+  border-color: white;
+  border-style: solid;
+  padding: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.button-icon-css:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.button-icon-css:active {
+  background-color: rgb(35, 35, 35);
+}
+
+.rock-paper-scissors-result {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "Alfa Slab One", system-ui;
+}
+
+.score {
+  margin-top: 2vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Alfa Slab One", system-ui;
+}
+
+.you-and-computer {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Alfa Slab One", system-ui;
+}
+
+.reset-score {
+  height: 60px;
+  width: 313px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: white;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(30, 30, 30);
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.reset-score:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.reset-score:active {
+  background-color: rgb(40, 40, 40);
 }
 
 .article-preview-boxes-background {
