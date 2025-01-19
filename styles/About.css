@@ -84,7 +84,7 @@
   border-radius: 50%;
   margin: 0 auto;
   position: relative;
-  overflow: hidden; /* Wichtige Eigenschaft, damit der Effekt nicht über die runden Kanten hinausgeht */
+  overflow: hidden;
 }
 
 .profile-picture-mask .glitch__layers {
