@@ -16,3 +16,11 @@
   font-size: 12px;
   margin-bottom: 6px;
 }
+
+/* Phone layout media queres*/
+
+@media (max-width: 800px) {
+  .footer-container {
+    margin-top: 10vh;
+  }
+}

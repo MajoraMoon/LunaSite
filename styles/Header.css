@@ -34,7 +34,7 @@ header {
     display: none;
   }
 
-  .top-header-homepage{
+  .top-header-homepage {
     justify-content: center;
   }
 }
@@ -206,33 +206,30 @@ nav .nav-link.active::after {
   text-decoration: none;
 }
 
-
 /* Phone layout media queres*/
 
-@media (max-width: 800px){
-
+@media (max-width: 800px) {
   nav .nav-link {
-    font-size: 1rem;
+    font-size: 1.7rem;
     margin-top: px;
   }
 
   nav li {
-  margin-right: 20px;
-}
+    margin-right: 20px;
+  }
 
-.card {
-  display: flex;
-  height: 20px;
-  width: 100px;
-  margin-bottom: 10px;
-}
+  .card {
+    display: flex;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 10px;
+    margin-top: 1.5vh;
+  }
 
-.header-navigaton-section {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-}
-
-
+  .header-navigaton-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 }
