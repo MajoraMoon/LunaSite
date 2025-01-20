@@ -204,3 +204,28 @@
     opacity: 0;
   }
 }
+
+
+/* Phone layout media queres*/
+
+@media (max-width: 800px) {
+
+
+ 
+
+  .about-me-text-layout {
+    width: 90vw;
+    padding-bottom: 5vh; 
+  }
+
+  .Hey-im-majora-text {
+    font-size: 2.5rem;
+  }
+
+  .description-text-about-me {
+    font-size: 1.2rem; 
+  }
+
+   
+
+}
