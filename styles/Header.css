@@ -205,3 +205,34 @@ nav .nav-link.active::after {
 .Majora-logo-text-fix {
   text-decoration: none;
 }
+
+
+/* Phone layout media queres*/
+
+@media (max-width: 800px){
+
+  nav .nav-link {
+    font-size: 1rem;
+    margin-top: px;
+  }
+
+  nav li {
+  margin-right: 20px;
+}
+
+.card {
+  display: flex;
+  height: 20px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.header-navigaton-section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+
+}

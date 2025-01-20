@@ -33,3 +33,11 @@ header {
   z-index: 10;
   pointer-events: auto;
 }
+
+/* Phone layout media queres*/
+
+@media (max-width: 800px) {
+  body{
+margin: 0;
+  }
+}

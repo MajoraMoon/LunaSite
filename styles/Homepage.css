@@ -503,6 +503,9 @@
   .article-preview-title-text {
     font: bold 0.9rem "Alfa Slab One", system-ui;
   }
+  .bottom-left-box-text{
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 1270px) {
@@ -516,4 +519,69 @@
     height: 60vw;
     margin: 0;
   }
+}
+
+
+/* Phone layout media queres*/
+
+@media (max-width: 800px) {
+
+  .middle-part-container {
+  /*if I use the short form for writing margin, it somehow overwrites other parts of css. It doesn't make sense but it does that*/
+  margin-top: 3vh;
+  margin-right: 0vw;
+  margin-left: 3vw;
+}
+
+  .one-background-image-editing, .second-background-image-editing, .third-background-image-editing, .fourth-background-image-editing {
+    display: none;
+  }
+
+  .general-styling{
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  #dynamicQuotes{
+    display: none;
+  }
+
+  .Welcome-video-row,
+.User-video-row,
+.Majora-here-video-row,
+.description-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.outer-container-top-part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 72vh;
+}
+
+.text-align-phone{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-top: 15vh;
+
+}
+
+.middle-right-box{
+  display: none;
+}
+
+  .top-left-box,
+  .bottom-left-box {
+    display: flex;
+  }
+  
 }
