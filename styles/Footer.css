@@ -22,5 +22,6 @@
 @media (max-width: 800px) {
   .footer-container {
     margin-top: 10vh;
+    width: 103vw;
   }
 }

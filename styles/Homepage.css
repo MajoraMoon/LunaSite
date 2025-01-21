@@ -643,4 +643,14 @@
     flex-direction: row;
     width: 100%;
   }
+
+  .kitten-link {
+    margin-top: 2vh;
+  }
+
+  .kitten-link svg {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease;
+  }
 }
