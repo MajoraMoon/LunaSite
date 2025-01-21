@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   tsParticles
     .load({
       id: particleId,
-      url: "../../scripts/lib/particles-config.json",
+      url: "particles-config.json",
     })
     .then((container) => {
       console.log("Loaded tsParticles (JSON-Config) successfully!");
