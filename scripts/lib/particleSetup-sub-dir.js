@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // tsParticles mit externer JSON-Config laden
   tsParticles
     .load({
       id: particleId,

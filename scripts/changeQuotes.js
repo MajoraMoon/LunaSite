@@ -1,10 +1,8 @@
 function observeDynamicText() {
   const textElement = document.getElementById("dynamicQuotes");
 
-  // Setze die .hidden Klasse an, falls sie noch nicht vorhanden ist
   textElement.classList.add("hidden");
 
-  // Aktivere den IntersectionObserver für diesen dynamischen Text
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

@@ -186,15 +186,6 @@
   }
 }
 
-/*
-@media (max-width: 910px) {
-
-
-
-
-
-}*/
-
 /* Phone layout media queres*/
 
 @media (max-width: 800px) {
@@ -231,6 +222,6 @@
   }
 
   .about-main {
-    padding-bottom: 15vh; /* Platz unter dem Inhalt */
+    padding-bottom: 25vh;
   }
 }
