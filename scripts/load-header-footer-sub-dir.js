@@ -10,8 +10,8 @@ function loadHeaderFooter(selector, filePath, callback) {
     });
 }
 
-loadHeaderFooter("header", "../../html/projects/header.html", () => {
+loadHeaderFooter("header", "../../projects/header.html", () => {
   initializeHeaderLogic();
 });
 
-loadHeaderFooter("footer", "../../html/projects/footer.html");
+loadHeaderFooter("footer", "../../projects/footer.html");
