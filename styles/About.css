@@ -56,35 +56,16 @@
   color: rgb(197, 211, 249);
 }
 
-@media (max-height: 799px) {
-  .description-text-about-me {
-    margin-top: 1.5rem;
-    font-size: 1rem;
-  }
-
-  .Hey-im-majora-text {
-    font-size: 3rem;
-  }
-
-  .profile-picture-mask {
-    width: 30vw;
-    height: 69vh;
-  }
-}
-
-@media (max-width: 910px) {
-  .profile-picture-mask {
-    display: none;
-  }
-}
-
 .profile-picture-mask {
+  display: flex;
+  flex-direction: row;
   width: 32vw;
   height: 78vh;
   border-radius: 50%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 
 .profile-picture-mask .glitch__layers {
@@ -205,17 +186,22 @@
   }
 }
 
+/*
+@media (max-width: 910px) {
+
+
+
+
+
+}*/
 
 /* Phone layout media queres*/
 
 @media (max-width: 800px) {
-
-
- 
-
   .about-me-text-layout {
     width: 90vw;
-    padding-bottom: 5vh; 
+    height: 50vh;
+    padding-bottom: 5vh;
   }
 
   .Hey-im-majora-text {
@@ -223,9 +209,28 @@
   }
 
   .description-text-about-me {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 
-   
+  .about-me-layout-text-picture {
+    flex-direction: column;
+    margin-top: 10vh;
+  }
 
+  .profile-picture-mask {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: 38vh;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background-position: -20vw 0;
+  }
+
+  .about-main {
+    padding-bottom: 15vh; /* Platz unter dem Inhalt */
+  }
 }
