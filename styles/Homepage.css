@@ -418,25 +418,25 @@
 }
 
 .article-preview-box-image-left::before {
-  background-image: url("../../assets/Images/broken-glass-sunlight.jpg");
+  background-image: url("../assets/Images/broken-glass-sunlight.jpg");
   background-position: 0 25%;
   background-size: 170%;
 }
 
 .article-preview-box-image-middle-left::before {
-  background-image: url("../../assets/Images/broken-glass-sunlight.jpg");
+  background-image: url("../assets/Images/broken-glass-sunlight.jpg");
   background-position: 0 25%;
   background-size: 170%;
 }
 
 .article-preview-box-image-middle-right::before {
-  background-image: url("../../assets/Images/snowy-village.jpg");
+  background-image: url("../assets/Images/snowy-village.jpg");
   background-position: 50% 50%;
   background-size: 120%;
 }
 
 .article-preview-box-image-right::before {
-  background-image: url("../../assets/Images/village-asian.jpg");
+  background-image: url("../assets/Images/village-asian.jpg");
   background-position: 50% 50%;
   background-size: 120%;
 }
