@@ -1,7 +1,3 @@
 # 🌐 Majora's Static Website
 
-I created this simple **static website** under my pseudonym **"Majora"**.
-
-🔗 **Note:**  
-The **Instagram** and **Discord** links are not implemented yet.  
-For now, they redirect to two random YouTube videos. 🎥✨
+I created this simple **static website** under my pseudonym **"Majora"**. I used AI to explain things to me, the code is still written by me, might explain why the website looks like that 
